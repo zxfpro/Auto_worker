@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>structure测试页</title>
+    <link rel="stylesheet" href="../../static/structure/css/structure.css">
+</head>
+<body>
+<form action="/structure/appstart" method="post">
+    <p>
+        标题：<input type="text"name="test1">
+        <input type="submit" value="生成新项目">
+    </p>
+    <textarea name="content" id="50" cols="30" rows="10"></textarea>
+    
+</form>
+<div>
+    {{ test1 }}
+    {{ content }}
+    
+</div>
+<script src="../../static/structure/js/jquery.min.js"></script>
+<script src="../../static/structure/js/structure.js"></script>
+</body>
+</html>
+
